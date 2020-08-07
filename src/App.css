@@ -1,0 +1,73 @@
+.App {
+  display: block;
+  margin: 50px auto;
+  font-family: sans-serif;
+  text-align: center;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 5px;
+  max-width: 480px;
+  font-family: monospace;
+}
+.Header {
+  display: block;
+  margin: auto;
+  border-color: purple;
+  max-width: 480px;
+}
+.Info {
+  list-style: none;
+  text-align: left;
+  border-color: blue;
+  max-width: 240px;
+  margin-left: 10px;
+}
+.City {
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.Time {
+  font-size: 20px;
+}
+.Weather {
+  list-style: none;
+  text-align: right;
+  border-color: red;
+  max-width: 240px;
+}
+.Weather .temperature {
+  font-size: 40px;
+}
+.Stats {
+  font-size: 20px;
+}
+.Stats .list {
+  list-style: none;
+}
+.App .main-icon {
+  height: 90px;
+  width: 90px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  bottom: 50px;
+}
+.Search .search-engine {
+  padding: 10px 10px 100px 10px;
+  position: relative;
+  bottom: 0px;
+}
+.Search .search-bar {
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px #2f2e41;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
+.Search .search-button {
+  border: 0;
+  border-radius: 5px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-left: 10px;
+}
