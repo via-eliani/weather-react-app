@@ -11,7 +11,7 @@ export default function Forecast() {
             src="http://www.gstatic.com/images/icons/material/apps/weather/2x/cloudy_light_color_96dp.png"
             alt=""
           />
-          26°/22°
+          <strong>35°</strong>/26°
         </div>
         <div className="col-2 days">
           Tuesday
@@ -20,7 +20,7 @@ export default function Forecast() {
             src="http://www.gstatic.com/images/icons/material/apps/weather/2x/strong_tstorms_light_color_96dp.png"
             alt=""
           />
-          26°/22°
+          <strong>36°</strong>/27°
         </div>
         <div className="col-2 days">
           Wednesday
@@ -29,7 +29,7 @@ export default function Forecast() {
             src="http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_96dp.png"
             alt=""
           />
-          26°/22°
+          <strong>35°</strong>/27°
         </div>
         <div className="col-2 days">
           Thursday{" "}
@@ -38,7 +38,7 @@ export default function Forecast() {
             src="http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_96dp.png"
             alt=""
           />
-          26°/22°
+          <strong>35°</strong>/27°
         </div>
         <div className="col-2 days">
           Friday{" "}
@@ -47,7 +47,7 @@ export default function Forecast() {
             src="http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_96dp.png"
             alt=""
           />
-          26°/22°
+          <strong>34°</strong>/25°
         </div>
         <div className="col-2 days">
           Saturday{" "}
@@ -56,7 +56,7 @@ export default function Forecast() {
             src="http://www.gstatic.com/images/icons/material/apps/weather/2x/cloudy_light_color_96dp.png"
             alt=""
           />
-          26°/22°
+          <strong>35°</strong>/26°
         </div>
       </div>
     </div>

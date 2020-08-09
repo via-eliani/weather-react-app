@@ -5,8 +5,8 @@ export default function Stats() {
     <div className="Stats">
       <ul className="list">
         <li>Cloudy</li>
-        <li>Humidity: 100%</li>
-        <li>Wind: 3 km/h</li>
+        <li>Humidity: 70%</li>
+        <li>Wind: 14 km/h</li>
       </ul>
     </div>
   );
