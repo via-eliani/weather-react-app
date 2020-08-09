@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./Header";
 import Icon from "./Icon";
 import Search from "./Search";
+import Forecast from "./Forecast";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Icon />
       <Search />
+      <Forecast />
     </div>
   );
 }
