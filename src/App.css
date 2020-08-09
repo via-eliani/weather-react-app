@@ -7,7 +7,7 @@
   border-width: thin;
   border-radius: 5px;
   max-width: 600px;
-  max-height: 550px;
+  max-height: 600px;
   font-family: monospace;
 }
 .Header {
@@ -76,6 +76,8 @@
 .Forecast {
   padding: 20px;
   margin-bottom: 0px;
+  position: relative;
+  bottom: 30px;
 }
 .Forecast .days {
   height: 100px;
@@ -88,4 +90,14 @@
 }
 .Forecast .daily-icon {
   height: 50px;
+}
+.Footer {
+  position: relative;
+  bottom: 10px;
+}
+.Footer .link {
+  color: grey;
+}
+.Footer .link:hover {
+  cursor: pointer;
 }

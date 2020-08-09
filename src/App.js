@@ -4,6 +4,7 @@ import Header from "./Header";
 import Icon from "./Icon";
 import Search from "./Search";
 import Forecast from "./Forecast";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Icon />
       <Search />
       <Forecast />
+      <Footer />
     </div>
   );
 }
