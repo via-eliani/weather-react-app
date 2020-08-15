@@ -5,7 +5,7 @@ import Time from "./Time";
 
 export default function Info() {
   return (
-    <div className="Info col-6">
+    <div className="Info">
       <City />
       <Time />
     </div>
