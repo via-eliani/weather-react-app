@@ -21,6 +21,10 @@
   max-width: 600px;
   padding: 0;
 }
+.Header .row {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .Info {
   list-style: none;
   text-align: left;

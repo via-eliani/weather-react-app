@@ -5,10 +5,10 @@ import Weather from "./Weather";
 
 export default function Header() {
   return (
-    <div className="Header col-12">
+    <div className="Header">
       <div className="row">
-        <Info className="col-6" />
-        <Weather className="col-6" />
+        <Info />
+        <Weather />
       </div>
     </div>
   );
