@@ -6,23 +6,27 @@
   border-style: solid;
   border-width: thin;
   border-radius: 5px;
+  width: 600px;
   max-width: 600px;
   max-height: 600px;
   font-family: monospace;
 }
+.App .container {
+  padding: 0;
+  margin: 0 auto;
+}
 .Header {
   display: block;
   margin: auto;
-  border-color: purple;
+  width: 600px;
   max-width: 600px;
 }
 .Info {
   list-style: none;
   text-align: left;
-  border-color: blue;
   max-width: 300px;
   position: relative;
-  left: 20px;
+  left: 0px;
 }
 .City {
   letter-spacing: 5px;
@@ -34,7 +38,6 @@
 .Weather {
   list-style: none;
   text-align: right;
-  border-color: red;
   max-width: 300px;
 }
 .Weather .temperature {
