@@ -8,7 +8,7 @@ export default function Search() {
     event.preventDefault();
   }
   return (
-    <div className="Search">
+    <div className="Search col-12">
       <form onSubmit={changeDisplay} className="search-engine">
         <input
           className="search-bar"
