@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function City() {
-  return <div className="City">Tokyo</div>;
+export default function City(props) {
+  return <div className="City">{props.city}</div>;
 }

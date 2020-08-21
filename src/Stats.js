@@ -1,12 +1,12 @@
 import React from "react";
 
-export default function Stats() {
+export default function Stats(props) {
   return (
     <div className="Stats">
       <ul className="list">
-        <li>Cloudy</li>
-        <li>Humidity: 70%</li>
-        <li>Wind: 14 km/h</li>
+        <li>{props.data.description}</li>
+        <li>Humidity: {props.data.humidity}%</li>
+        <li className="text-capitalize">Wind: {props.data.wind} km/h</li>
       </ul>
     </div>
   );

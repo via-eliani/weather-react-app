@@ -2,11 +2,11 @@ import React from "react";
 
 import Stats from "./Stats";
 
-export default function Weather() {
+export default function Weather(props) {
   return (
     <div className="Weather col-6">
-      <span className="temperature">24°C</span>
-      <Stats />
+      <span className="temperature">{props.data.temperature}°C</span>
+      <Stats data={props.data} />
     </div>
   );
 }
