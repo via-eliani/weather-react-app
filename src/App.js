@@ -28,6 +28,7 @@ export default function App() {
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
       icon: response.data.weather[0].icon,
+      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
   function gatherData() {
@@ -40,7 +41,7 @@ export default function App() {
       <div className="App">
         <div className="container">
           <Header data={weatherData} />
-          <Icon icon={weatherData.icon} />
+          <Icon data={weatherData} />
           <div className="Search col-12">
             <form className="search-engine" onSubmit={changeDisplay}>
               <input
