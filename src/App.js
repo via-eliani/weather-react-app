@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./Header";
 import Icon from "./Icon";
 import axios from "axios";
-//import Search from "./Search";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
@@ -11,6 +10,14 @@ export default function App() {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState("Tokyo");
 
+  function updateCity(event) {
+    event.preventDefault();
+    setCity(event.target.value);
+  }
+  function changeDisplay(event) {
+    event.preventDefault();
+    gatherData();
+  }
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -35,12 +42,13 @@ export default function App() {
           <Header data={weatherData} />
           <Icon icon={weatherData.icon} />
           <div className="Search col-12">
-            <form className="search-engine">
+            <form className="search-engine" onSubmit={changeDisplay}>
               <input
                 className="search-bar"
                 type="text"
                 placeholder="Enter City"
                 autoFocus="on"
+                onChange={updateCity}
               />
               <input className="search-button" type="submit" value="Search" />
             </form>
