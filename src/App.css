@@ -24,12 +24,13 @@
 .Header .row {
   max-width: 600px;
   margin: 0 auto;
+  padding: 0;
 }
 .Info {
   list-style: none;
   text-align: left;
   max-width: 300px;
-  padding: 0;
+  padding-left: 0px 0px;
 }
 .City {
   letter-spacing: 5px;
