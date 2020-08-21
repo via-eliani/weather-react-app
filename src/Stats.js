@@ -4,9 +4,9 @@ export default function Stats(props) {
   return (
     <div className="Stats">
       <ul className="list">
-        <li>{props.data.description}</li>
+        <li className="text-capitalize">{props.data.description}</li>
         <li>Humidity: {props.data.humidity}%</li>
-        <li className="text-capitalize">Wind: {props.data.wind} km/h</li>
+        <li>Wind: {props.data.wind} km/h</li>
       </ul>
     </div>
   );

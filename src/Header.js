@@ -7,7 +7,7 @@ export default function Header(props) {
   return (
     <div className="Header">
       <div className="row">
-        <Info city={props.data.city} />
+        <Info city={props.data.city} date={props.data.date} />
         <Weather data={props.data} />
       </div>
     </div>

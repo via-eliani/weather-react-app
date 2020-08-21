@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Icon() {
+export default function Icon(props) {
   return (
     <div className="Icon">
       <img

@@ -7,7 +7,7 @@ export default function Info(props) {
   return (
     <div className="Info col-6">
       <City city={props.city} />
-      <Time />
+      <Time date={props.date} />
     </div>
   );
 }
