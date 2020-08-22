@@ -1,64 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import Icon from "./Icon";
+import axios from "axios";
 
-export default function Forecast() {
-  return (
-    <div className="Forecast">
-      <div className="row">
-        <div className="col-2 days">
-          Monday
-          <img
-            className="daily-icon"
-            src="http://www.gstatic.com/images/icons/material/apps/weather/2x/cloudy_light_color_96dp.png"
-            alt=""
+export default function Forecast(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState(null);
+  function getForecast(response) {
+    setForecast(response.data);
+    setLoaded(true);
+  }
+  if (loaded) {
+    return (
+        <div className="Forecast">
+          10:00
+          <Icon
+            className="forecast-icon"
+            icon={forecast.list[0].weather[0].icon}
           />
-          <strong>35°</strong>/26°
+          <strong>{Math.round(forecast.list[0].main.temp)}°C</strong>
         </div>
-        <div className="col-2 days">
-          Tuesday
-          <img
-            className="daily-icon"
-            src="http://www.gstatic.com/images/icons/material/apps/weather/2x/strong_tstorms_light_color_96dp.png"
-            alt=""
-          />
-          <strong>36°</strong>/27°
-        </div>
-        <div className="col-2 days">
-          Wednesday
-          <img
-            className="daily-icon"
-            src="http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_96dp.png"
-            alt=""
-          />
-          <strong>35°</strong>/27°
-        </div>
-        <div className="col-2 days">
-          Thursday{" "}
-          <img
-            className="daily-icon"
-            src="http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_96dp.png"
-            alt=""
-          />
-          <strong>35°</strong>/27°
-        </div>
-        <div className="col-2 days">
-          Friday{" "}
-          <img
-            className="daily-icon"
-            src="http://www.gstatic.com/images/icons/material/apps/weather/2x/partly_cloudy_light_color_96dp.png"
-            alt=""
-          />
-          <strong>34°</strong>/25°
-        </div>
-        <div className="col-2 days">
-          Saturday{" "}
-          <img
-            className="daily-icon"
-            src="http://www.gstatic.com/images/icons/material/apps/weather/2x/cloudy_light_color_96dp.png"
-            alt=""
-          />
-          <strong>35°</strong>/26°
-        </div>
-      </div>
-    </div>
-  );
-}
+      );
+    } else {
+    let apiKey = "f655251e7aa74c3031f8eb126912bec6";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${props.city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(getForecast);
+    return "loading...";
+    }

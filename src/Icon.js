@@ -22,14 +22,27 @@ export default function Icon(props) {
     "50d": "FOG",
     "50n": "FOG",
   };
-  return (
-    <div className="Icon">
-      <ReactAnimatedWeather
-        icon={iconMapping[props.data.icon]}
-        color="gray"
-        size={100}
-        animate={true}
-      />
-    </div>
-  );
+  if (props.className === "forecast-icon") {
+    return (
+      <div className="Icon">
+        <ReactAnimatedWeather
+          icon={iconMapping[props.icon]}
+          color="gray"
+          size={50}
+          animate={true}
+        />
+      </div>
+    );
+  } else {
+    return (
+      <div className="Icon">
+        <ReactAnimatedWeather
+          icon={iconMapping[props.icon]}
+          color="gray"
+          size={100}
+          animate={true}
+        />
+      </div>
+    );
+  }
 }

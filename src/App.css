@@ -103,8 +103,8 @@
   transition: all 200ms ease-in-out;
   border-radius: 5px;
 }
-.Forecast .daily-icon {
-  height: 50px;
+.Forecast .forecast-icon {
+  max-height: 50px;
 }
 .Footer {
   position: relative;

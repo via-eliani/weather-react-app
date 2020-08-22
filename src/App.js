@@ -40,7 +40,7 @@ export default function App() {
       <div className="App">
         <div className="container">
           <Header data={weatherData} />
-          <Icon data={weatherData} />
+          <Icon icon={weatherData.icon} />
           <div className="Search col-12">
             <form className="search-engine" onSubmit={changeDisplay}>
               <input
@@ -53,7 +53,7 @@ export default function App() {
               <input className="search-button" type="submit" value="Search" />
             </form>
           </div>
-          <Forecast />
+          <Forecast city={weatherData.city} />
           <Footer />
         </div>
       </div>
