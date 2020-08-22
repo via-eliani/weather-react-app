@@ -48,6 +48,12 @@
 .Weather .temperature {
   font-size: 40px;
 }
+.Weather .temperature sup {
+  vertical-align: super;
+  font-size: 17px;
+  position: relative;
+  top: 1px;
+}
 .Stats {
   font-size: 20px;
 }
