@@ -25,7 +25,7 @@ export default function Weather(props) {
             </a>
           </sup>
         </span>
-        <Stats data={props.data} />
+        <Stats data={props.data} unit="metric" />
       </div>
     );
   } else {
@@ -41,7 +41,7 @@ export default function Weather(props) {
             |°F
           </sup>
         </span>
-        <Stats data={props.data} />
+        <Stats data={props.data} unit="imperial" />
       </div>
     );
   }
