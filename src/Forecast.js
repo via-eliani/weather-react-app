@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Icon from "./Icon";
+
 import axios from "axios";
+import HourlyForecast from "./HourlyForecast";
 
 export default function Forecast(props) {
   const [loaded, setLoaded] = useState(false);
@@ -13,13 +14,13 @@ export default function Forecast(props) {
 
   if (loaded) {
     return (
-      <div className="Forecast">
-        10:00
-        <Icon
-          className="forecast-icon"
-          icon={forecast.list[0].weather[0].icon}
-        />
-        <strong>{Math.round(forecast.list[0].main.temp)}°C</strong>
+      <div className="Forecast flexbox-container">
+        <HourlyForecast className="hours" data={forecast.list[0]} />
+        <HourlyForecast className="hours" data={forecast.list[1]} />
+        <HourlyForecast className="hours" data={forecast.list[2]} />
+        <HourlyForecast className="hours" data={forecast.list[3]} />
+        <HourlyForecast className="hours" data={forecast.list[4]} />
+        <HourlyForecast className="hours" data={forecast.list[5]} />
       </div>
     );
   } else {

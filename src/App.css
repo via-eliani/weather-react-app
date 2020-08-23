@@ -20,6 +20,7 @@
   margin: auto;
   max-width: 600px;
   padding: 10px 20px;
+  font-family: "Montserrat", sans-serif;
 }
 .Header .row {
   max-width: 600px;
@@ -35,9 +36,10 @@
 .City {
   letter-spacing: 5px;
   font-size: 40px;
+  font-style: bold;
 }
 .Time {
-  font-size: 20px;
+  font-size: 15px;
 }
 .Weather {
   list-style: none;
@@ -55,7 +57,7 @@
   top: 1px;
 }
 .Stats {
-  font-size: 20px;
+  font-size: 15px;
 }
 .Stats .list {
   list-style: none;
@@ -70,6 +72,7 @@
 }
 .Search {
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 .Search .search-engine {
   padding: 30px;
@@ -94,10 +97,15 @@
   position: relative;
   bottom: 10px;
 }
-.Forecast .days {
-  height: 100px;
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
 }
-.Forecast .days:hover {
+.Forecast .hours {
+  height: 100px;
+  display: block;
+}
+.Forecast .hours:hover {
   background-color: lightgrey;
   opacity: 0.7;
   transition: all 200ms ease-in-out;
@@ -105,6 +113,15 @@
 }
 .Forecast .forecast-icon {
   max-height: 50px;
+}
+.HourlyForecast {
+  max-width: 50px;
+}
+.HourlyForecast:hover {
+  background-color: lightgrey;
+  opacity: 0.7;
+  transition: all 200ms ease-in-out;
+  border-radius: 5px;
 }
 .Footer {
   position: relative;
