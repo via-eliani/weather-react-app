@@ -15,13 +15,13 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="row">
-        <div className="Forecast">
-          <HourlyForecast className="hours" data={forecast.list[0]} />
-          <HourlyForecast className="hours" data={forecast.list[1]} />
-          <HourlyForecast className="hours" data={forecast.list[2]} />
-          <HourlyForecast className="hours" data={forecast.list[3]} />
-          <HourlyForecast className="hours" data={forecast.list[4]} />
-          <HourlyForecast className="hours" data={forecast.list[5]} />
+        <div className="Forecast flexbox-container">
+          <HourlyForecast className="hours col-2" data={forecast.list[0]} />
+          <HourlyForecast className="hours col-2" data={forecast.list[1]} />
+          <HourlyForecast className="hours col-2" data={forecast.list[2]} />
+          <HourlyForecast className="hours col-2" data={forecast.list[3]} />
+          <HourlyForecast className="hours col-2" data={forecast.list[4]} />
+          <HourlyForecast className="hours col-2" data={forecast.list[5]} />
         </div>
       </div>
     );
