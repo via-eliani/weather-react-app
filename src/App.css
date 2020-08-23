@@ -32,7 +32,7 @@
 }
 .City {
   letter-spacing: 5px;
-  font-size: 35px;
+  font-size: 30px;
   font-style: bold;
 }
 .Time {
@@ -41,7 +41,6 @@
 .Weather {
   list-style: none;
   text-align: right;
-  max-width: 300px;
   padding: 0;
 }
 .Weather .temperature {
