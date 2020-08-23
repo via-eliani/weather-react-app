@@ -100,6 +100,7 @@
 }
 .Forecast .hours {
   height: 100px;
+  width: 100px;
   display: block;
 }
 .Forecast .hours:hover {
