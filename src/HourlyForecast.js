@@ -14,7 +14,7 @@ export default function HourlyForecast(props) {
   function formatTemperature() {
     let maxTemp = Math.round(props.data.main.temp_max);
     let minTemp = Math.round(props.data.main.temp_min);
-    return `${maxTemp}°C/${minTemp}°C`;
+    return `${maxTemp}°C`;
   }
   return (
     <div className="HourlyForecast col-2">

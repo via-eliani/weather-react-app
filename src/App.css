@@ -89,6 +89,7 @@
   margin-left: 10px;
 }
 .Forecast {
+  margin: 10px auto;
   padding: 20px;
   margin-bottom: 0px;
   position: relative;
@@ -102,6 +103,7 @@
   height: 100px;
   width: 100px;
   display: block;
+  padding: 30px;
 }
 .Forecast .hours:hover {
   background-color: lightgrey;
