@@ -115,7 +115,7 @@
   max-height: 50px;
 }
 .HourlyForecast {
-  max-width: 50px;
+  max-width: 100px;
 }
 .HourlyForecast:hover {
   background-color: lightgrey;

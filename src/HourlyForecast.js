@@ -13,7 +13,7 @@ export default function HourlyForecast(props) {
   }
   function formatTemperature() {
     let maxTemp = Math.round(props.data.main.temp_max);
-    let minTemp = Math.round(props.data.main.temp_min);
+    //let minTemp = Math.round(props.data.main.temp_min);
     return `${maxTemp}°C`;
   }
   return (
