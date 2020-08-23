@@ -15,7 +15,7 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="row">
-        <div className="Forecast flexbox-container">
+        <div className="Forecast">
           <HourlyForecast className="hours" data={forecast.list[0]} />
           <HourlyForecast className="hours" data={forecast.list[1]} />
           <HourlyForecast className="hours" data={forecast.list[2]} />
