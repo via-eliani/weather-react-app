@@ -9,15 +9,6 @@ import Footer from "./Footer";
 export default function App() {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState("Tokyo");
-
-  function updateCity(event) {
-    event.preventDefault();
-    setCity(event.target.value);
-  }
-  function changeDisplay(event) {
-    event.preventDefault();
-    gatherData();
-  }
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -30,6 +21,15 @@ export default function App() {
       icon: response.data.weather[0].icon,
     });
   }
+  function updateCity(event) {
+    event.preventDefault();
+    setCity(event.target.value);
+  }
+  function changeDisplay(event) {
+    event.preventDefault();
+    gatherData();
+  }
+
   function gatherData() {
     const apiKey = "f655251e7aa74c3031f8eb126912bec6";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;

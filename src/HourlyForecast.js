@@ -12,14 +12,15 @@ export default function HourlyForecast(props) {
     }
   }
   function formatTemperature() {
-    let temp = Math.round(props.data.main.temp);
-    return `${temp}°C`;
+    let maxTemp = Math.round(props.data.main.temp_max);
+    let minTemp = Math.round(props.data.main.temp_min);
+    return `${maxTemp}°C/${minTemp}°C`;
   }
   return (
     <div className="HourlyForecast col-2">
       {formatHours()}
       <Icon className="forecast-icon" icon={props.data.weather[0].icon} />
-      <strong>{formatTemperature()}</strong>
+      {formatTemperature()}
     </div>
   );
 }
