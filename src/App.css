@@ -44,7 +44,7 @@
   padding: 0;
 }
 .Weather .temperature {
-  font-size: 40px;
+  font-size: 30px;
 }
 .Weather .temperature sup {
   vertical-align: super;

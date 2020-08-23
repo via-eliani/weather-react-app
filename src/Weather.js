@@ -15,7 +15,7 @@ export default function Weather(props) {
 
   if (unit === "metric") {
     return (
-      <div className="Weather col-4">
+      <div className="Weather col-6">
         <span className="temperature">
           {props.data.temperature}
           <sup className="unit">
